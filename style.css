@@ -20,7 +20,7 @@ footer a {
     max-width: 100px;
 }
  
-img {
+.logo {
     border-radius: 100px;
 }
 
@@ -29,5 +29,51 @@ nav {
 }
 
 main {
-    background-color: rgba(0, 255, 0, 0.15)
+    background-color: rgba(0, 255, 0, 0.15);
 }
+
+.imagemBG {
+    width: 100%;
+
+}
+
+.texto {
+    height: 90%;   
+    position: absolute;
+    top: 56px;
+    left: 0;
+    background-color: #c3c4c5e0; 
+}
+
+/* @media screen and (min-width: 0) {
+    .texto {
+        height: calc(100vh - 266px);
+    }
+    .imagemBG {
+        height: calc(100vh - 266px);
+    
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .texto {
+        height: calc(100vh - 176px);
+    }
+    .imagemBG {
+        height: calc(100vh - 176px);
+        width: calc(100% - 176px);
+    
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .texto {
+        height: calc(100vh - 170px);
+        width: calc(100% - 170px);
+    }
+    .imagemBG {
+        height: calc(80%);
+        width: 100%
+    
+    }
+} */
