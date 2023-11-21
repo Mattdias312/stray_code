@@ -1,8 +1,13 @@
 footer {
-    background-color: #333;
+    background: linear-gradient(#321a44, #4b008400);
     color: white;
     padding: 20px 0;
     display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
  
 footer a {
@@ -17,4 +22,12 @@ footer a {
  
 img {
     border-radius: 100px;
+}
+
+nav {
+    background: linear-gradient(#321a44, #4b008400);
+}
+
+main {
+    background-color: rgba(0, 255, 0, 0.15)
 }
