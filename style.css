@@ -17,10 +17,12 @@ footer a {
 }
  
 .logo {
-    max-width: 100px;
+    max-width: 80px;
+    border-radius: 100px;
 }
- 
-.logo {
+
+.home {
+    max-width: 30px;
     border-radius: 100px;
 }
 
@@ -33,17 +35,24 @@ main {
 }
 
 .imagemBG {
-    width: 100%;
-
+    display: flex;
+    position: fixed;
+    right: 0;
+    height: 68vh;
 }
 
 .texto {
-    height: 90%;   
+    height: 68vh;   
     position: absolute;
     top: 56px;
     left: 0;
     background-color: #c3c4c5e0; 
+    overflow-y: scroll;
+    text-align: justify;
+    
 }
+
+
 
 /* @media screen and (min-width: 0) {
     .texto {
@@ -77,3 +86,4 @@ main {
     
     }
 } */
+
