@@ -83,9 +83,14 @@ main {
     width: 50%;
 }
 
-.textoCarousel{
+.fundoCarousel{
     background-color: #c3c4c5e0; 
 }
+
+.textoCarousel{
+    margin-left: 40px;
+}
+
 .carousel{
     padding: 12vh 0 12vh;
 }
