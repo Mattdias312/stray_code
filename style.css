@@ -93,3 +93,7 @@ main {
 .active{
     display: flex !important;
 }
+
+h5{
+    text-align: center;
+}
