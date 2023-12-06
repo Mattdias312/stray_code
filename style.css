@@ -151,7 +151,7 @@ nav {
 }
 
 .carousel{
-    padding: 17vh 0 17vh;
+    padding: 12vh 0 12vh;
 }
 
 .active{
@@ -164,7 +164,7 @@ h5{
 
 @media only screen and (max-height: 924px) {
     .carousel{
-        padding: 15vh 0 15vh;
+        padding: 14.5vh 0 14.5vh;
     }
     .texto {
         height: 82vh;
