@@ -48,6 +48,36 @@ nav {
     background-repeat: no-repeat;
 }
 
+.marketing{
+    background-image: url(img/marketing.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.financeiro{
+    background-image: url(img/financeiro.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.concorrente{
+    background-image: url(img/concorrente.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.notaFiscal{
+    background-image: url(img/notaFical.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.cnae{
+    background-image: url(img/cnae.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
 .index{
     background-color: rgba(0, 255, 0, 0.15);
     background-size: 220vh 83vh;
