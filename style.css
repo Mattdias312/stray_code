@@ -30,8 +30,28 @@ nav {
     background: linear-gradient(#321a44, #4b008400);
 }
 
-main {
+.abertura {
+    background-image: url(img/aberturaEmpresa.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.contabilidade{
+    background-image: url(img/contabilidade.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.tributacao{
+    background-image: url(img/tributacao.jpg);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
+}
+
+.index{
     background-color: rgba(0, 255, 0, 0.15);
+    background-size: 220vh 83vh;
+    background-repeat: no-repeat;
 }
 
 .imagemBG {
@@ -42,10 +62,7 @@ main {
 }
 
 .texto {
-    height: 83vh;   
-    position: absolute;
-    top: 56px;
-    left: 0;
+    height: 83vh;
     background-color: #c3c4c5e0; 
     overflow-y: scroll;
     text-align: justify;
