@@ -32,55 +32,62 @@ nav {
 
 .abertura {
     background-image: url(img/aberturaEmpresa.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .contabilidade{
     background-image: url(img/contabilidade.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
 .tributacao{
     background-image: url(img/tributacao.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
 .marketing{
     background-image: url(img/marketing.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
 .financeiro{
     background-image: url(img/financeiro.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
 .concorrente{
     background-image: url(img/concorrente.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
 .notaFiscal{
     background-image: url(img/notaFical.jpg);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
 .cnae{
     background-image: url(img/cnae.jpg);
-    background-size: 220vh 83vh;
+    background-size: 220vh 82vh;
     background-repeat: no-repeat;
 }
 
 .index{
     background-color: rgba(0, 255, 0, 0.15);
-    background-size: 220vh 83vh;
+    background-size: 100%;
+
     background-repeat: no-repeat;
 }
 
@@ -130,6 +137,11 @@ nav {
     width: 50%;
 }
 
+.imgCarouselVisao{
+    width: 51.5%;
+
+}
+
 .fundoCarousel{
     background-color: #c3c4c5e0; 
 }
@@ -139,7 +151,7 @@ nav {
 }
 
 .carousel{
-    padding: 12vh 0 12vh;
+    padding: 17vh 0 17vh;
 }
 
 .active{
@@ -149,3 +161,22 @@ nav {
 h5{
     text-align: center;
 }
+
+@media only screen and (max-height: 924px) {
+    .carousel{
+        padding: 15vh 0 15vh;
+    }
+    .texto {
+        height: 82vh;
+    }
+  }
+
+@media only screen and (max-height: 670px) {
+    .carousel{
+        padding: 0.5vh 0 0.5vh;
+    }
+
+    .texto {
+        height: 75vh;        
+    }
+  }
