@@ -25,7 +25,7 @@ Constraint FK_tipo_empresa foreign Key(tipo_empresa) References Tipo_Empresa(id_
 
 create table Cnae(
 id_cnae int identity (1,1) not null,
-numero_cnae int not null,
+numero_cnae varchar(10) not null,
 descricao varchar (100) not null,
 ramo_empresa int not null,
 Constraint PK_cnae Primary Key(id_cnae),
@@ -89,3 +89,4 @@ Constraint FK_tributacao_ass foreign Key(tributacao) References Tributacao(id_tr
 select * from Tipo_Empresa
 select * from Ramo_Empresa
 select * from Cnae
+
