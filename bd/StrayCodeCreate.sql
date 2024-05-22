@@ -171,8 +171,20 @@ Qualquer negócio que não é obrigado a aderir ao Lucro Real pode optar por esse r
 - Existe, porém, uma desvantagem que deve ser levada em consideração. Caso a empresa lucre menos do que a média das demais empresas 
 que exercem a mesma atividade, ela deverá pagar um imposto em cima da alíquota pré-fixada (8%).');
 
+insert into Questionario
+values (GETDATE(), 19),
+(GETDATE(), 28)
+
+insert into Usuario
+values ('JG_da_selva', 'J_G12345', 'João Gomes', '111-111-111-11', 'joaog@email.com', 3),
+('Laral', 'L_12345', 'Larissa Manoela', '222-222-222-22', 'laralm@email.com', 4);
+
+select 
+
 select * from Tipo_Empresa
 select * from Ramo_Empresa
 select * from Cnae
 select * from Nota_Fiscal
+select * from Questionario
+select * from Usuario
 
