@@ -173,18 +173,62 @@ que exercem a mesma atividade, ela deverá pagar um imposto em cima da alíquota p
 
 insert into Questionario
 values (GETDATE(), 19),
-(GETDATE(), 28)
+(GETDATE(), 28),
+(GETDATE(), 35)
 
 insert into Usuario
 values ('JG_da_selva', 'J_G12345', 'João Gomes', '111-111-111-11', 'joaog@email.com', 3),
-('Laral', 'L_12345', 'Larissa Manoela', '222-222-222-22', 'laralm@email.com', 4);
+('Laral', 'L_12345', 'Larissa Manoela', '222-222-222-22', 'laralm@email.com', 4),
+('Ojoaq', '302112M', 'Joaquim Silva', '333-333-333-33', 'joaquims@email.com', 7);
 
-select 
+insert into Ass_Tributacao_Cnae
+values (19, 1),
+(20, 1),
+(21, 1),
+(25, 2),
+(28, 2),
+(35, 3);
+
+select te.tipo_empresa
+from Usuario u inner join Questionario q on u.questionario = q.id_questionario
+inner join Cnae c on q.cnae = c.id_cnae inner join Ramo_Empresa re on c.ramo_empresa = re.id_ramo_empresa
+inner join Tipo_Empresa te on re.tipo_empresa = te.id_empresa
+where id_usuario = 1;
+
+select re.nome_ramo_empresa
+from Usuario u inner join Questionario q on u.questionario = q.id_questionario
+inner join Cnae c on q.cnae = c.id_cnae inner join Ramo_Empresa re on c.ramo_empresa = re.id_ramo_empresa
+where id_usuario = 2
+
+select nf.tipos_nota
+from Usuario u inner join Questionario q on u.questionario = q.id_questionario
+inner join Cnae c on q.cnae = c.id_cnae inner join Ramo_Empresa re on c.ramo_empresa = re.id_ramo_empresa
+inner join Tipo_Empresa te on re.tipo_empresa = te.id_empresa inner join Nota_Fiscal nf on nf.tipo_empresa = te.id_empresa
+where id_usuario = 6;
+
+select tipos_tributacao
+from Usuario u inner join Questionario q on u.questionario = q.id_questionario
+inner join Cnae c on q.cnae = c.id_cnae inner join Ass_Tributacao_Cnae asso on c.id_cnae = asso.cnae
+inner join Tributacao t on asso.tributacao = t.id_tributacao
+where id_usuario = 6;
+
+select tipos_tributacao
+from Usuario u inner join Questionario q on u.questionario = q.id_questionario
+inner join Cnae c on q.cnae = c.id_cnae inner join Ass_Tributacao_Cnae asso on c.id_cnae = asso.cnae
+inner join Tributacao t on asso.tributacao = t.id_tributacao
+where id_usuario = 1;
+
+select te.tipo_empresa
+from Usuario u inner join Questionario q on u.questionario = q.id_questionario
+inner join Cnae c on q.cnae = c.id_cnae inner join Ramo_Empresa re on c.ramo_empresa = re.id_ramo_empresa
+inner join Tipo_Empresa te on re.tipo_empresa = te.id_empresa
+where id_usuario = 6;
 
 select * from Tipo_Empresa
 select * from Ramo_Empresa
 select * from Cnae
+select * from Tributacao
 select * from Nota_Fiscal
 select * from Questionario
 select * from Usuario
-
+select * from Ass_Tributacao_Cnae
